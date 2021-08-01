@@ -25,7 +25,7 @@ function myweight(){
     break;
   case 'no' :
   case 'n' :
-   console.log('no,the user don't guess');
+   console.log('no,the user don\'t guess');
     alert('oh, I am 53Kg ');
 
 
@@ -51,7 +51,7 @@ function mytall() {
       break;
     case 'no':
     case 'n':
-      console.log('no,the user don't guess');
+      console.log('no,the user don\'t guess');
       alert('oh, i am 154cm');
 
 
@@ -80,7 +80,7 @@ function myInterest() {
       break;
     case 'no':
     case 'n':
-         console.log('no,the user don't guess');
+         console.log('no,the user don\'t guess');
       alert('oh, why not it is the most interesting field');
 
 
@@ -161,11 +161,13 @@ function Birth() {
       alert('Bravo you guess my birthday month');
       counter++;
       break;
+    }  
     }
 
-    console.log(Birth)
+    
     else if (Birth < answer) {
       alert('try again ,it is too low');
+      console.log(Birth)
     }
    
     else {
@@ -173,7 +175,7 @@ function Birth() {
 
     }
 
-  }
+  
   alert('my birthady month is December ');
   while( Birth !== 12 && cartoonfilms > 8) {
        Birth = prompt('try again ,it is too high');
@@ -181,9 +183,12 @@ function Birth() {
          Birth = prompt('try again ,it is too low');
        while( Birth ===) {
         Birth = prompt( `oh ${username}, you guess my birthday month  `);
-         counter++;}
+         counter++;
+        }
 
 
+}
+  }
 }
 Birth();
 
@@ -194,7 +199,7 @@ function myColor() {
   let mycolor = prompt(username + ' Can you guess my favourite color?');
    console.log (myColor)
   outerloop: for (let x = 0; x < 6; x++) {
-    for (let i = 0; i < favColor.length; i++) {
+    for (let i = 0; i < 6; i++) {
 
       if (mycolor === favColor[i]) {
         alert('oh you guess my favourite color');
@@ -216,4 +221,4 @@ myColor();
 
 alert('My favourite colors are: white, black, grey, purple colors');
 alert('your score is ' + counter);
-alert(' Hope you have a great time at my website ' + username + ' ^_^ ');
+alert(' Hope you have a great time at my website ' + username + ' ^_^ ' + 'meet you in another websites');
