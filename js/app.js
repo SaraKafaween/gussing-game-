@@ -161,7 +161,7 @@ function Birth() {
       alert('Bravo you guess my birthday month');
       counter++;
       break;
-    }  
+      
     }
 
     
@@ -174,7 +174,7 @@ function Birth() {
       alert('try again ,it is too high');
 
     }
-
+  }
   
   alert('my birthady month is December ');
   while( Birth !== 12 && cartoonfilms > 8) {
