@@ -210,7 +210,7 @@ function myColor() {
         alert('try again ,it is not my favourite one');
         myColor = prompt(username + 'can you guess favourite color? ');
       }
-      if (x === 5) {
+      if (x === 6) {
         alert('sorry. you do not guess it');
       }
     }
