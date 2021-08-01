@@ -181,7 +181,7 @@ function Birth() {
        Birth = prompt('try again ,it is too high');
        while( Birth !== 12 && cartoonfilms < 8) {
          Birth = prompt('try again ,it is too low');
-       while( Birth ===) {
+       while( Birth === 12) {
         Birth = prompt( `oh ${username}, you guess my birthday month  `);
          counter++;
         }
