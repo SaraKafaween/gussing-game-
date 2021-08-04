@@ -165,70 +165,56 @@ function Birth() {
     }
 
     
-    else if (Birth < answer) {
+    else (Birth < answer) ;{
       alert('try again ,it is too low');
       console.log(Birth)
     }
    
-    else {
-      alert('try again ,it is too high');
-
-    }
+    
   }
   
   alert('my birthady month is December ');
-  while( Birth !== 12 && cartoonfilms > 8) {
-       Birth = prompt('try again ,it is too high');
-       while( Birth !== 12 && cartoonfilms < 8) {
-         Birth = prompt('try again ,it is too low');
-       while( Birth === 12) {
-        Birth = prompt( `oh ${username}, you guess my birthday month  `);
-         counter++;
-        }
-
-
-}
-  }
+  
+  
 }
 Birth();
 
 
 
 function myColor() {
-  let favColor = ['black', 'purple', 'white', 'grey'];
+  let favColor = 'black';
   let mycolor = prompt(username + ' Can you guess my favourite color?');
    console.log (myColor)
  
-   outerloop: for (let x = 0; x < 5; x++) {
-
-      innerloop; for (let i = 0; i < 3; i++){
-        if (mycolor === favColor[i] ) {
+   outerloop: for (let x = 0; x < 6; x++) {
+    
+  if (mycolor === favColor ) {
           alert('oh you guess my favourite color');
         counter++;
-          break innerloop ;
-        break outerloop;  
-     
+        var s = 2;  
+        break;  
         }
-      }            
-     
-    alert('try again ,it is not my favourite one');
-    myColor = prompt(username + 'can you guess favourite color? ');
+
+         
+                 
+
+  while (s === 2){
+          
+        break outerloop;}  
+
+  alert('try again ,it is not my favourite one');
+  myColor = prompt(username + 'can you guess favourite color? ');
         
 
-    
-      
-            
-     
-      } 
       if (x === 5)  {
         alert('sorry. you do not guess it');
       }
     }
-  
+}
 
 myColor();
 
 
-alert('My favourite colors are: white, black, grey, purple colors');
+alert('My favourite color is black it always the king of colors');
 alert('your score is ' + counter);
 alert(' Hope you have a great time at my website ' + username + ' ^_^ ' + 'meet you in another websites');
