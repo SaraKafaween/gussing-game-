@@ -198,24 +198,34 @@ function myColor() {
   let favColor = ['black', 'purple', 'white', 'grey'];
   let mycolor = prompt(username + ' Can you guess my favourite color?');
    console.log (myColor)
-  
-    for (let i = 0; i < 6; i++) {
+ 
+   outerloop: for (let x = 0; x < 5; x++) {
 
-      if (mycolor === favColor[i]) {
-        alert('oh you guess my favourite color');
+      innerloop; for (let i = 0; i < 3; i++){
+        if (mycolor === favColor[i] ) {
+          alert('oh you guess my favourite color');
         counter++;
+          break innerloop ;
+        break outerloop;  
+     
+        }
+      }            
+     
+    alert('try again ,it is not my favourite one');
+    myColor = prompt(username + 'can you guess favourite color? ');
+        
 
-        break outerloop;
-      } else {
-        alert('try again ,it is not my favourite one');
-        myColor = prompt(username + 'can you guess favourite color? ');
-      }
-      if (x === 6) {
+    
+      
+            
+     
+      } 
+      if (x === 5)  {
         alert('sorry. you do not guess it');
       }
     }
   
-}
+
 myColor();
 
 
