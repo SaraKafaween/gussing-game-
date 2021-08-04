@@ -198,7 +198,7 @@ function myColor() {
   let favColor = ['black', 'purple', 'white', 'grey'];
   let mycolor = prompt(username + ' Can you guess my favourite color?');
    console.log (myColor)
-  outerloop: for (let x = 0; x < 6; x++) {
+  
     for (let i = 0; i < 6; i++) {
 
       if (mycolor === favColor[i]) {
@@ -214,7 +214,7 @@ function myColor() {
         alert('sorry. you do not guess it');
       }
     }
-  }
+  
 }
 myColor();
 
